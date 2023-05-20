@@ -107,7 +107,6 @@
     $('.fancybox').fancybox();
   }
 
-  
   // Mobile nav
   var $container = $('#container'),
     isMobileNavAnim = false,
