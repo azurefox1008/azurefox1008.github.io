@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+
+<html theme="dark" showBanner="true" hasBanner="true" > 
+<link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/fontawesome/css/brands.css" rel="stylesheet">
+<link href="/fontawesome/css/solid.css" rel="stylesheet">
+<script src="/js/color.global.min.js" ></script>
+<script src="/js/load-settings.js" ></script>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>计算机网络 第1章 概论 | 孟德尔的豌豆黄圆绿皱</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="教材：《计算机网络（第8版）》谢希仁 编著 第一章 概述 &amp;emsp;&amp;emsp;三大类网络：电信、有线电视、计算机网络（三网融合） &amp;emsp;&amp;emsp;互联网2个重要基本特点：连通性（connectivity）和资源共享（sharing） &amp;emsp;&amp;emsp;互联网+：指“互联网+各个传统行业”，把互联网的创新成果深度融合与经济社会的各领域。 &amp;emsp;&amp;emsp;计算机网络 由若干节">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络 第1章 概论">
+<meta property="og:url" content="https://azurefox1008.github.io/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/index.html">
+<meta property="og:site_name" content="孟德尔的豌豆黄圆绿皱">
+<meta property="og:description" content="教材：《计算机网络（第8版）》谢希仁 编著 第一章 概述 &amp;emsp;&amp;emsp;三大类网络：电信、有线电视、计算机网络（三网融合） &amp;emsp;&amp;emsp;互联网2个重要基本特点：连通性（connectivity）和资源共享（sharing） &amp;emsp;&amp;emsp;互联网+：指“互联网+各个传统行业”，把互联网的创新成果深度融合与经济社会的各领域。 &amp;emsp;&amp;emsp;计算机网络 由若干节">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users/azure/AppData/Roaming/Typora/typora-user-images/image-20230427081843169.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users/azure/AppData/Roaming/Typora/typora-user-images/image-20230504162822096.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users/azure/AppData/Roaming/Typora/typora-user-images/image-20230504164408541.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users/azure/AppData/Roaming/Typora/typora-user-images/image-20230508141019206.png">
+<meta property="article:published_time" content="2023-05-21T05:33:55.000Z">
+<meta property="article:modified_time" content="2023-05-21T06:21:25.398Z">
+<meta property="article:author" content="azurefox1008">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://azurefox1008.github.io/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png">
+  
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  
+  
+    
+<div id="banner" class="">
+  <img src="/images/9.png" itemprop="image">
+  <div id="banner-dim"></div>
+</div>
+ 
+   
+  <div id="main-grid" class="shadow   ">
+    <div id="nav" class=""  >
+      <navbar id="navbar">
+  <nav id="title-nav">
+    <a href="/">
+      <div id="vivia-logo">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div>孟德尔的豌豆黄圆绿皱 </div>
+    </a>
+  </nav>
+  <nav id="main-nav">
+    
+      <a class="main-nav-link" href="/">Home</a>
+    
+      <a class="main-nav-link" href="/archives">Archives</a>
+    
+      <a class="main-nav-link" href="/about">About</a>
+    
+  </nav>
+  <nav id="sub-nav">
+    <a id="theme-btn" class="nav-icon">
+      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
+      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
+    </a>
+    
+    <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
+      <span class="material-symbols-rounded">search</span>
+    </a>
+    <div id="nav-menu-btn" class="nav-icon">
+      <span class="material-symbols-rounded">menu</span>
+    </div>
+  </nav>
+</navbar>
+<div id="nav-dropdown" class="hidden">
+  <div id="dropdown-link-list">
+    
+      <a class="nav-dropdown-link" href="/">Home</a>
+    
+      <a class="nav-dropdown-link" href="/archives">Archives</a>
+    
+      <a class="nav-dropdown-link" href="/about">About</a>
+    
+     
+    </div>
+</div>
+<script>
+  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownEle = document.getElementById("nav-dropdown");
+  dropdownBtn.onclick = function() {
+    dropdownEle.classList.toggle("hidden");
+  }
+</script>
+    </div>
+    <div id="sidebar-wrapper">
+      <sidebar id="sidebar">
+  
+    <div class="widget-wrap">
+  <div class="info-card">
+    <div class="avatar">
+      
+        <image src=/images/avatar.jpg></image>
+      
+      <div class="img-dim"></div>
+    </div>
+    <div class="info">
+      <div class="username">azurefox1008 </div>
+      <div class="dot"></div>
+      <div class="subtitle">A fledgling programmer </div>
+      <div class="link-list">
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://store.steampowered.com" title="Steam"><i class="fa-brands fa-steam"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://github.com/azurefox1008" title="GitHub"><i class="fa-brands fa-github"></i></a>
+         
+      </div>  
+    </div>
+  </div>
+</div>
+
+  
+  <div class="sticky">
+    
+      
+
+
+
+    
+      
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">归档</h3>
+      
+      
+        <a class="archive-link" href="/archives/2023/05 ">
+          五月 2023 
+          <div class="archive-count">1 </div>
+        </a>
+      
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">最新文章</h3>
+      <ul>
+        
+          <li>
+            <a href="/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/">计算机网络 第1章 概论</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+  </div>
+</sidebar>
+    </div>
+    <div id="content-body">
+       
+
+<article id="post-计算机网络-第1章-概述" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        计算机网络 第1章 概论
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-05-21T05:33:55.000Z" itemprop="datePublished">2023-05-21</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            3.3k 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <p><em>教材：《计算机网络（第8版）》谢希仁 编著</em></p>
+<h1 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h1><p><img src="/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt="思维导图"></p>
+<p>&emsp;&emsp;三大类网络：电信、有线电视、计算机网络（三网融合）</p>
+<p>&emsp;&emsp;<strong>互联网2个重要基本特点</strong>：<font color="Coral"><strong>连通性</strong></font><small>（connectivity）</small>和<font color="Coral"><strong>资源共享</strong></font><small>（sharing）</small></p>
+<p>&emsp;&emsp;互联网+：指“互联网+各个传统行业”，把互联网的创新成果深度融合与经济社会的各领域。</p>
+<p>&emsp;&emsp;<strong>计算机网络</strong> 由若干<font color="Coral"><strong>节点</strong></font><small>（node）</small>和连接这些节点的<font color="Coral"><strong>链路</strong></font><small>（link）</small>组成。<u>节点可以是计算机、集线器、交换机或路由器等</u>。</p>
+<p>&emsp;&emsp;网络 —— 把计算机连在一起。</p>
+<p>&emsp;&emsp;互连网<small>（<strong>i</strong>nternet，小写i）</small> —— 网络的网络，把网络通过路由器连在一起。与网络相连的计算机叫<strong>主机</strong>。（局部，不一定采用TCP/IP）</p>
+<p>&emsp;&emsp;互联网<small>（<strong>I</strong>nternet，大写I）</small>—— 特指覆盖全球的、具有连通性和资源共享性的计算机网络。（全网最大、最重要）</p>
+<h3 id="互联网发展的三个阶段"><a href="#互联网发展的三个阶段" class="headerlink" title="互联网发展的三个阶段"></a>互联网发展的三个阶段</h3><p>&emsp;<strong>第一阶段</strong>：  <big><code>单个网络ARPANET</code></big>   → <big> <code>互联网</code> </big>   <small>(1969~1990)</small></p>
+<p>&emsp;&emsp;<small><strong>ARPANET</strong>：单个分组交换网，非互连网，<font color="teal"><strong>1983年TCP/IP协议，标志互联网诞生</strong></font>。</small></p>
+<p>&emsp;<strong>第二阶段</strong>：  <big><code>三级结构的互联网</code></big>    <small>(1985~1993)</small></p>
+<p>&emsp;&emsp;<small>国家科学基金网<strong>NSFNET</strong>，三级结构：主干网、地区网和校园网（或企业网），覆盖全美主要的大学和研究生。</small></p>
+<p>&emsp;<strong>第三阶段</strong>：<big><code>全球范围的多层次ISP结构的互联网</code></big>   <small>（1993~现在）</small>★</p>
+<p>&emsp;&emsp;出现<font color="Coral"><strong>互联网服务提供者ISP</strong></font><small>（Internet Service Provider)</small>，提供接入互联网的服务，收费出租IP（如移动、联通）。</p>
+<p>&emsp;&emsp;多层次ISP结构：按覆盖面积大小和所拥有的IP地址数目的不同分为<u>主干ISP</u>、<u>地区ISP</u>和<u>本地ISP</u>。</p>
+<center><small>互联网上的数据流量急剧增长，如何更快、更有效</small></center>
+
+<center><font size="6">↓</font></center>
+
+<p>&emsp;&emsp;<font color="coral"><strong>互联网交换点IXP</strong></font><small>（Internet eXchange Point）</small> —— 允许两个网络直接相连并快速交换分组。常采用工作在数据链路层的网络交换机（硬件资源）</p>
+<p>&emsp;&emsp;内容提供者<small>（Content Provider）</small>：如在互联网上向用户提供视频等内容的公司，不向用户提供互联网转接服务（软件）</p>
+<p>&emsp;&emsp;<strong>万维网WWW</strong><small>（World Wide Web）</small>：欧洲原子核研究组织CERN开发，互联网指数级增长的主要驱动力。</p>
+ <center><small>制定标准</small></center>
+
+<center><font size="6">↓</font></center>
+
+<center>所有互联网的标准以<font color="teal"><b>RFC</b></font><small>（Request For Comments）</small>的形式发表。</center>
+
+
+
+<h2 id="1-3-互联网的组成"><a href="#1-3-互联网的组成" class="headerlink" title="1.3 互联网的组成"></a>1.3 互联网的组成</h2><h3 id="1-边缘部分"><a href="#1-边缘部分" class="headerlink" title="(1) 边缘部分"></a>(1) 边缘部分</h3><p>&emsp;&emsp;由所有连接在互联网上的<strong>主机</strong><small>（host）</small>组成，<font color="teal"><strong>由用户直接使用</strong></font>（可以是个人、单位或者某个ISP），<font color="teal"><strong>资源提供、不负责数据转发</strong></font>。这些主机又称为<font color="coral"><strong>端系统</strong></font><small>（end system）</small>，如桌面计算机、移动计算机、服务器和其他智能终端设备。</p>
+<p>&emsp;&emsp;<u>主机和主机</u>的通信实际上是<u>进程与进程</u>的通信。</p>
+<p>&emsp;&emsp;通信方式有：</p>
+<p>&emsp;1. <big><strong>客户/服务器方式</strong></big> Client/Server方式（C/S）</p>
+<p>&emsp;&emsp;进程之间 服务 和 被服务 的关系。</p>
+<center> <big>客户</big></center>
+<center><small>（被用户调用，主动请求服务）</small></center>
+
+<center><font size="6">↓↑</font>   </center>
+
+<center><big>服务器</big></center>
+<center><small>（服务提供方，不断运行，被动等待，提供服务）</small></center>
+
+<ol start="2">
+<li><big><strong>对等方式</strong></big> Peer-to-Peer方式（P2P） </li>
+</ol>
+<p>&emsp;&emsp;通信时不区分请求方和服务方（身份不固定），平等地、对等连接通信。</p>
+<h3 id="2-核心部分"><a href="#2-核心部分" class="headerlink" title="(2) 核心部分"></a>(2) 核心部分</h3><p>&emsp;&emsp;互联网中最复杂的部分，为边缘部分提供连通性，使任何一台主机都能向其他主机通信。</p>
+<p>&emsp;&emsp;在该部分起特殊作用的是<strong>路由器</strong><small>（router）</small>，路由器是实现<strong>分组交换</strong><small>（packet switching）</small>的关键构件，负责转发收到的分组。<font color="teal"><strong>分组转发是网络核心部分中最重要的功能</strong></font>。</p>
+<p>&emsp;&emsp;<big>什么是<strong>交换</strong><small>（switching）</small>？</big></p>
+<p>&emsp;&emsp;按照某种方式动态地分配传输线路的资源。</p>
+<h4 id="★-三种交换方式"><a href="#★-三种交换方式" class="headerlink" title="★ 三种交换方式"></a>★ 三种交换方式</h4><ul>
+<li><strong>电路交换</strong>：一对一，N部电话N(N-1)/2对线  → 交换机</li>
+</ul>
+<p>&emsp;&emsp;<big><code>建立连接</code></big><small>（占用通信资源）</small>→ <big><code>通话</code></big><small>（始终占用端到端的通信资源）</small>→ <big><code>释放连接</code></big><small>（归还通信资源）</small></p>
+<p>&emsp;&emsp;计算机数据具有突发性，通信线路传输效率低。</p>
+<ul>
+<li><strong>报文交换</strong>：基于<strong>存储转发技术</strong></li>
+</ul>
+<p>&emsp;&emsp;要发送的整块数据为一个<font color="coral"><strong>报文</strong></font><small>(message)</small>。</p>
+<ul>
+<li><strong>分组交换</strong></li>
+</ul>
+<p>&emsp;&emsp;采用<font color="coral"><strong>存储转发技术</strong></font>，在发送端把报文划分成更小的等长数据段，数据段前面添加<strong>首部</strong><small>（head）</small>构成<strong>分组</strong><small>（packet，又称为“包”或“包头”）</small>,首部中包含<u>目的地址</u>、<u>源地址</u>等重要控制信息。</p>
+<p>&emsp;&emsp;互联网采用分组交换，以分组作为数据传输单元。发送端依次把各分组发送到接收端，接收端接到分组后去掉首部还原成原来的报文。</p>
+<p>&emsp;&emsp;路由器处理分组的过程：</p>
+<p>&emsp;&emsp;每一个分组在互联网中独立选择传输路径（只要最后能送到就行，怎么走由路由器判定，不需要独占某条线路，宏观上共享）。</p>
+<p>&emsp;&emsp;暂存分组 &gt;&gt; 检查首部 &gt;&gt; 查找转发表 &gt;&gt; 按照首部中的目的地址找合适的接口转发出去。</p>
+<p>&emsp;&emsp;路由器要创建和动态维护转发表（？）</p>
+<p>&emsp;&emsp;<strong>分组交换的优点</strong></p>
+<p>&emsp;&emsp;高效：动态分配传输带宽，对通信链路逐段占用；<del>（带宽？）</del></p>
+<p>&emsp;&emsp;灵活：为每一个分组独立地选择最合适的传输路径；</p>
+<p>&emsp;&emsp;迅速：以分组为传送单位，不需要建立连接（建立连接也要花费时间）就能向其他主机发送分组；</p>
+<p>&emsp;&emsp;可靠：保证可靠性的网络协议：多路由的分组交换网，使网络具有很好的生存性</p>
+<p>&emsp;&emsp;<strong>缺点</strong></p>
+<p>&emsp;&emsp;存储可能出现排队延迟</p>
+<p>&emsp;&emsp;不保证带宽：动态分配</p>
+<p>&emsp;&emsp;增加开销：首部；路由器要暂存分组，维护转发表</p>
+<p>对比：</p>
+<p><img src="/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users\azure\AppData\Roaming\Typora\typora-user-images\image-20230427081843169.png" alt="image-20230427081843169"></p>
+<h2 id="1-4-计算机网络在我国的发展"><a href="#1-4-计算机网络在我国的发展" class="headerlink" title="1.4 计算机网络在我国的发展"></a>1.4 计算机网络在我国的发展</h2><p>&emsp;&emsp;（略）</p>
+<h2 id="1-5-计算机网络的类别"><a href="#1-5-计算机网络的类别" class="headerlink" title="1.5 计算机网络的类别"></a>1.5 计算机网络的类别</h2><p>&emsp;&emsp;计算机网络是指将地理位置不同的具有<font color="sandybrown">独立功能</font>的多台计算机及其外部设备，通过通信线路连接起来（连通），在网络操作系统、网络管理软件及网络通信协议的管理和协调下，实现资源共享和信息传递得计算机系统（共享）。</p>
+<ul>
+<li><p>按作用范围</p>
+<p>（所覆盖的范围不同功能不同协议也可能不同）</p>
+</li>
+<li><p>按使用者</p>
+<ul>
+<li>公用网（public network）：交费使用（常见）</li>
+<li>专用网（private network）：为特殊业务工作的需要而建造</li>
+</ul>
+</li>
+<li><p>用来把用户接入互联网的网络：接入网AN（Access Network）</p>
+<ul>
+<li>本地接入网或居民接入网，既不属于互联网的核心部分也不属于互联网的边缘部分，是某个用户端系统到本地ISP的第一个路由器（边缘路由器）之间的一种网络。</li>
+<li>ISP通过多种接入网络技术把用户的端系统连接到互联网，接入网起到与互联网连接的桥梁作用。</li>
+</ul>
+</li>
+<li><p>设备之间的连接关系不同（拓扑结构？）</p>
+</li>
+</ul>
+<h2 id="1-6-计算机网络的性能"><a href="#1-6-计算机网络的性能" class="headerlink" title="1.6 计算机网络的性能"></a>1.6 计算机网络的性能</h2><h4 id="评价指标"><a href="#评价指标" class="headerlink" title="评价指标"></a>评价指标</h4><ol>
+<li><p><strong>速率</strong>（bit/s、kbit/s、Mbit/s、Gbit/s）：数据的传输速度，数据率（data rate）或比特率（bit rate），<u>理想状态</u>下一定t内网络信道能通过的<font color="sandybrown"><strong>最大数据量</strong></font>（额定速率或标称速率，而<u>非实际速率</u>）。</p>
+<p>比特是信息的基本单位（香农）。</p>
+<p>单位换算：</p>
+<p>1 G = 2^10 M = 2^10 * 2^10 k</p>
+<p>注意：呆毛带上s后，以10^3为换算关系</p>
+<p>1 Gb/s = 10^3 Mb/s = 10^6 kb/s</p>
+<p>（大写的B是字节）</p>
+</li>
+<li><p><strong>带宽</strong>（bandwidth）<!--？实际值？不是很懂--></p>
+<p>频域：某个信道具有的频带宽度（HZ），某信道允许通过的信号频带范围为该信道的带宽；</p>
+<p>时域：网络中某通道传输数据的能力，表示在单位时间内网络中的某信道所能通过的“最高数据率”（bits/s）。</p>
+</li>
+<li><p><strong>吞吐量</strong>（throughput）</p>
+<p>单位时间内通过某个网络（或信道、接口）的实际数据量。受带宽和速率的限制，速率是绝对上限值，可能远小于额定速率。</p>
+</li>
+<li><p><strong>时延</strong>（delay / latency）</p>
+<p>数据从网络（或链路）的一端传到另一端所需要的时间。</p>
+<p>总时延 = 以下4个之和</p>
+<ul>
+<li>发送时延（主机/路由器吐完数据需要的时间） 数据帧长度(bit) / 发送速率(bit/s)——提高带宽</li>
+<li>传播时延（信道长度(m)/传播速率(m/s)）——路程长短无法改变</li>
+<li>处理时延（主机/路由器在收到分组时，处理分组如分析首部、提取数据、差错检验或查找路由所花费的时间）——改进路由器的工作效率</li>
+<li>排队时延（分组在输入输出队列中排队等待处理和转发所经历的时延，取决于网络当时的通信量，通信量很大时队列溢出，分组丢失）——改进路由器的工作效率</li>
+</ul>
+<p>注：对于高速网络链路，提高的仅仅是数据的发送速率，而不是传播速率。</p>
+</li>
+</ol>
+<p><img src="/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users\azure\AppData\Roaming\Typora\typora-user-images\image-20230504162822096.png" alt="image-20230504162822096"></p>
+<p>管道中的比特数表示从发送端发出但尚未到达接收端的比特数。</p>
+<p>只有在代表链路的管道都充满比特时链路才得到充分的利用。</p>
+<ol start="6">
+<li><p>往返时延</p>
+<p>RTT = A-&gt;B的传播时延+B的处理时延和排队时延+B的发送时延+B-&gt;A的传播时延</p>
+<p>有效数据率 = 数据长度/总时延 = 数据长度/(发送时延+RTT) <!--？发送时间和发送时延--></p>
+</li>
+<li><p>利用率</p>
+<ul>
+<li>信道利用率（信道有x%的时间是被利用的）</li>
+<li>网络利用率（全网络的信道利用率的加权平均值）</li>
+</ul>
+<p><img src="/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users\azure\AppData\Roaming\Typora\typora-user-images\image-20230504164408541.png" alt="image-20230504164408541"></p>
+</li>
+</ol>
+<h2 id="1-7-计算机网络体系结构"><a href="#1-7-计算机网络体系结构" class="headerlink" title="1.7 计算机网络体系结构"></a>1.7 计算机网络体系结构</h2><p>&emsp;&emsp;采用分层的方法把复杂的通信问题划分为若干较小的、比较易于研究和处理的局部问题。</p>
+<p>&emsp;&emsp;抽象分层、统一标准、模块独立</p>
+<p>&emsp;&emsp;ISO提出的OSI/RM是使计算机在世界范围内互连成网的标准框架。</p>
+<p>&emsp;&emsp;ISO 7498国际标准，七层协议的体系结构</p>
+<p><img src="/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/Users\azure\AppData\Roaming\Typora\typora-user-images\image-20230508141019206.png" alt="image-20230508141019206"></p>
+<p>网络的体系结构是计算机网络的各层及其协议的集合，即计算机网络及其构件所应完成的功能的精确定义（不涉及实现的问题）。</p>
+<p>网络协议（protocol）是为网络中数据交换而建立的规则、标准或约定。</p>
+<p>语法：规定传输数据的格式，解决交换信息的格式问题</p>
+<p>语义：规定要完成的功能，解决做什么的问题</p>
+<p>同步：规定各种操作的顺序（时序），解决什么时间什么条件下做什么特定操作的问题</p>
+<p>协议两种形式：</p>
+<ul>
+<li>文字描述</li>
+<li>程序代码</li>
+</ul>
+<p>不论什么形式都必须对网络上信息交换过程做出精确地解释。</p>
+<p>应用层：通过应用进程间的交互来完成特定网络应用（报文）（用户）</p>
+<p>运输层：负责两台主机进程之间的通信提供通用的数据传输服务，具有复用和分用的功能，主要是用TCP和UDP两种协议</p>
+<p>网络层：为分组交换网上的不同主机提供通信服务</p>
+<p>路由选择</p>
+<p>转发</p>
+<p>网络协议IP和路由协议 IP数据报</p>
+<p>数据链路层：实现两个节点之间的可靠传输（帧）</p>
+<p>差错检验</p>
+<p>物理层：实现比特（0和1）的传输</p>
+<p>传输介质在物理层之下</p>
+<p>实体（entity）：对等的层次之间。任意可发送或接收信息的硬件或软件进程</p>
+<p>协议：控制两个对等实体进行通信的规则的集合（水平，对上层透明）</p>
+<p>服务访问点（SAP）：在同一系统中相邻两层的实体进行交互（交换信息）的地方，实际上是一个逻辑接口，交换服务原语。</p>
+<p>服务：在协议的控制下，两个对等实体间的通信使得本层能向上一层提供服务，要实现本层协议还需要使用下层所提供的服务（垂直）。</p>
+
+        
+      </div>
+
+         
+    </div>
+    
+     
+  </div>
+  
+    
+
+  
+</article>
+
+ 
+    </div>
+    <div id="footer-wrapper">
+      <footer id="footer">
+  
+  <div id="footer-info" class="inner">
+    
+    &copy; 2023 azurefox1008<br>
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
+  </div>
+</footer>
+
+    </div>
+    <div class="back-to-top-wrapper">
+    <button id="back-to-top-btn" class="back-to-top-btn" onclick="topFunction()">
+        <span class="material-symbols-rounded">keyboard_arrow_up</span>
+    </button>
+</div>
+
+<script>
+    function topFunction() {
+        window.scroll({ top: 0, behavior: 'smooth' });
+    }
+    let btn = document.getElementById('back-to-top-btn');
+    function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            btn.style.opacity = 1;
+        } else {
+            btn.style.opacity = 0;
+        }
+    }
+    window.onscroll = function() {
+        scrollFunction();
+    }
+</script>
+
+  </div>
+  <script src="/js/light-dark-switch.js"></script>
+</body>
+</html>
