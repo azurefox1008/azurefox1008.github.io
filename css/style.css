@@ -1,75 +1,75 @@
 :root {
-  --V05: #000001;
-  --V10: #010408;
-  --V15: #030c17;
-  --V20: #071727;
-  --V25: #0d2339;
-  --V30: #142f4b;
-  --V35: #1b3c5d;
-  --V40: #224a71;
-  --V45: #2a5885;
-  --V50: #32669a;
-  --V55: #3a75af;
-  --V60: #4284c5;
-  --V65: #4a94db;
-  --V70: #53a3f2;
-  --V75: #63b3ff;
-  --V80: #86c3ff;
-  --V85: #a6d2ff;
-  --V90: #c3e2ff;
-  --V95: #e2f0ff;
-  --V98: #f4f9ff;
+  --V05: #000101;
+  --V10: #000407;
+  --V15: #000e15;
+  --V20: #001924;
+  --V25: #002633;
+  --V30: #003444;
+  --V35: #004256;
+  --V40: #005068;
+  --V45: #005f7b;
+  --V50: #006e8e;
+  --V55: #007ea2;
+  --V60: #008eb6;
+  --V65: #009eca;
+  --V70: #00afdf;
+  --V75: #11bff0;
+  --V80: #65cdf3;
+  --V85: #93d9f5;
+  --V90: #b8e7fa;
+  --V95: #def3fb;
+  --V98: #f2fafe;
   --M05: #000001;
-  --M10: #020306;
-  --M15: #070c11;
-  --M20: #0f171f;
-  --M25: #18232d;
-  --M30: #222f3c;
-  --M35: #2d3c4c;
-  --M40: #374a5d;
-  --M45: #42576e;
-  --M50: #4d667f;
-  --M55: #597491;
-  --M60: #6583a3;
-  --M65: #7193b6;
-  --M70: #7da2c9;
-  --M75: #8cb2d9;
-  --M80: #a4c1e0;
-  --M85: #bbd0e8;
-  --M90: #d1e0f0;
-  --M95: #e8eff7;
-  --M98: #f6f9fc;
+  --M10: #010405;
+  --M15: #050d10;
+  --M20: #0c181d;
+  --M25: #14242b;
+  --M30: #1d3139;
+  --M35: #263f48;
+  --M40: #2f4c58;
+  --M45: #395b68;
+  --M50: #436a79;
+  --M55: #4d798a;
+  --M60: #58889b;
+  --M65: #6298ad;
+  --M70: #6da8bf;
+  --M75: #7db8d0;
+  --M80: #98c6d9;
+  --M85: #b3d4e2;
+  --M90: #cce2ec;
+  --M95: #e6f0f5;
+  --M98: #f5f9fb;
   --G05: #000001;
-  --G10: #030304;
-  --G15: #090b0e;
-  --G20: #13161a;
-  --G25: #1d2228;
-  --G30: #282f35;
-  --G35: #343b44;
-  --G40: #404952;
-  --G45: #4c5662;
-  --G50: #596571;
-  --G55: #667381;
-  --G60: #738292;
-  --G65: #8191a3;
-  --G70: #8ea1b4;
-  --G75: #9eb0c4;
-  --G80: #b1c0cf;
-  --G85: #c4cfdb;
-  --G90: #d7dfe7;
-  --G95: #ebeff3;
+  --G10: #020404;
+  --G15: #080c0e;
+  --G20: #111719;
+  --G25: #1b2326;
+  --G30: #263034;
+  --G35: #313d41;
+  --G40: #3c4a50;
+  --G45: #48585f;
+  --G50: #54676e;
+  --G55: #61757e;
+  --G60: #6e848e;
+  --G65: #7b949e;
+  --G70: #88a4af;
+  --G75: #97b3bf;
+  --G80: #acc2cb;
+  --G85: #c1d1d8;
+  --G90: #d5e0e5;
+  --G95: #eaeff2;
   --G98: #f7f9fa;
-  --dark-L16: #080e14;
-  --dark-L20: #0f171f;
-  --dark-L25: #1a222b;
-  --dark-L40: #374a5d;
-  --dark-L50: #4d667f;
-  --dark-L75: #70b3f7;
-  --light-L55: #3275b4;
-  --light-L70: #53a3f2;
-  --light-L95: #e5f0fc;
-  --light-L95G: #eaeff5;
-  --light-L98: #f6f9fc;
+  --dark-L16: #060f12;
+  --dark-L20: #0c181d;
+  --dark-L25: #1c292e;
+  --dark-L40: #2f4c58;
+  --dark-L50: #436a79;
+  --dark-L75: #45bde7;
+  --light-L55: #007fa6;
+  --light-L70: #00afdf;
+  --light-L95: #d4f5ff;
+  --light-L95G: #e8f0f4;
+  --light-L98: #f5f9fb;
   --neut-L90: rgba(255,255,255,0.9);
   --neut-L75: rgba(255,255,255,0.75);
   --neut-L50: rgba(255,255,255,0.5);
@@ -553,7 +553,7 @@ navbar,
 .comment-card .main-title,
 .archive-main-card .archive-title {
   text-decoration: none;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   color: var(--main-title);
   line-height: 40px;
@@ -1037,7 +1037,7 @@ navbar {
   display: flex;
   gap: 4px;
 }
-.article {
+.article16px {
   margin-bottom: 16px;
 }
 .article-inner {
@@ -1601,10 +1601,10 @@ a.article-title:active {
   display: box;
   display: flex;
   padding: 0 24px;
-  gap: 20px;
+  gap: 100px;
   color: var(--neut-L75);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   overflow: hidden;
 }
 #article-nav .article-nav-btn i {
@@ -1612,18 +1612,18 @@ a.article-title:active {
   font-size: 20px;
 }
 #article-nav .article-nav-btn.left {
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 #article-nav .article-nav-btn.right {
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 #article-nav .article-nav-btn.disabled {
   opacity: 0;
@@ -2435,7 +2435,7 @@ pre .javascript .function {
   font-weight: bold;
   border: none;
   position: fixed;
-  bottom: 240px;
+  bottom: 60px;
   opacity: 0;
   -webkit-transition: background 0.15s ease-out, opacity 0.15s ease-out;
   -moz-transition: background 0.15s ease-out, opacity 0.15s ease-out;
