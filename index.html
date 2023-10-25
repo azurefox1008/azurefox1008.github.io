@@ -236,7 +236,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            48 词 
+            58 词 
           </div>
         </div>
         
@@ -246,9 +246,9 @@
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-            1netstat -ano
+            12netstat -ano | findstr &quot;3306&quot;taskkill /pid 7072 /f
 
-&emsp;&emsp;使用 taskkill 命令可能会被拒绝访问（？大概要以管理员身份运行，下次试试），去任务管理器中直接关闭就好。
+&emsp;&emsp;使用 taskkill 强制执行命令可能会被拒绝访问（？大概要以管理员身份运行，下次试试），去任务管理器中直接关闭就好。
   
           </div>
         
