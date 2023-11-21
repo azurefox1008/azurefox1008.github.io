@@ -136,7 +136,7 @@
       <div class="category-box">
             <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">
                 笔记
-                <div class="category-count">1</div>
+                <div class="category-count">2</div>
             </a>
         </div>
     </div>
@@ -148,7 +148,7 @@
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">标签</h3>
-      <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chatgpt/" rel="tag">chatgpt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a></li></ul>
+      <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chatgpt/" rel="tag">chatgpt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a></li></ul>
     </div>
   </div>
 
@@ -159,6 +159,11 @@
     <div class="widget">
       <h3 class="widget-title">归档</h3>
       
+      
+        <a class="archive-link" href="/archives/2023/11 ">
+          十一月 2023 
+          <div class="archive-count">2 </div>
+        </a>
       
         <a class="archive-link" href="/archives/2023/10 ">
           十月 2023 
@@ -182,6 +187,14 @@
       <ul>
         
           <li>
+            <a href="/2023/11/21/Git%E5%88%86%E6%94%AF%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6/">Git分支的创建与合并</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/21/Linux%E7%BC%96%E7%A8%8B/">Linux编程</a>
+          </li>
+        
+          <li>
             <a href="/2023/10/25/chatgpt%E9%97%AE%E7%AD%94%E8%AE%B0%E5%BD%95-%E6%9F%A5%E8%AF%A2PID%EF%BC%8C%E9%87%8A%E6%94%BE%E7%AB%AF%E5%8F%A3/">chatgpt问答记录-查询PID，释放端口</a>
           </li>
         
@@ -203,6 +216,171 @@
     </div>
     <div id="content-body">
       <!-- 导航页-->
+
+   
+
+<article id="post-Git分支的创建与合并" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/11/21/Git%E5%88%86%E6%94%AF%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6/">Git分支的创建与合并</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-11-21T01:15:02.000Z" itemprop="datePublished">2023-11-21</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            528 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            将远程仓库的项目克隆到本地12git clone &lt;仓库url&gt; &lt;本地目录名&gt;cd &lt;本地目录名&gt;
+
+
+
+创建新分支1234567891011121314# 切换到主要分支（一般是 main 或者 master）git checkout main # 从远程仓库拉取最新代码git pull origin main # 创建分支git checkout -b &lt;分支名&gt;# 查看当前仓库中存在的所有分支git branch# 切换分支git checkout &lt;分支名&gt;
+
+克隆下来的项目会自动与远程仓库建立关联，远程仓库会被自动添加为一个名为 origin 的远程仓库配置，在本地项目的基础上创建的新分支也会默认与 origin 远程仓库关联。
+也可通过 git remote add 命令，在一个已有的仓库中添加一个新的远程仓库作为关联：
+1git remote add &lt;远程仓库别名&gt; &lt;远程仓库url&gt;
+
+
+
+提交到分支1234# 将所有修改的文件添加到暂存区git add .# 将暂存区中的修改...  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/11/21/Git%E5%88%86%E6%94%AF%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-Linux编程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/11/21/Linux%E7%BC%96%E7%A8%8B/">Linux编程</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-11-21T00:20:04.000Z" itemprop="datePublished">2023-11-21</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            667 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            误按 Ctrl + s 使终端暂停，使用 Ctrl + q 退出该状态。 
+Linux文件系统扩展名&emsp;&emsp;Linux文件扩展名与文件类型、可执行等属性没有相关性，file.1、file.abc都是合法的。
+约定俗成：
+
+系统文件：*.conf  *.rpm
+系统与脚本：*.c  *.php
+存档文件和压缩文件：*.tar  *.gz
+
+分类&emsp;&emsp;Linux中一切皆文件，对目录和设备的操作都是文件操作。分为：
+
+普通文件：也称磁盘文件，并且能够进行随机的数据存储。可使用命令
+1ls -lh
+
+来查看文件属性，普通文件的第一个符号是 -。
+
+目录文件：第一个字符是 d。
+
+设备文件：Linux下各种硬件设备都是文件，该类型的文件提供了大多数物理设备的接口。分为字符型设备和块设备。
+
+字符型设备用于传输数据，一次只能读出和写入一个字节的数据，包括调制解调器、终端、打印机、声卡以及鼠标。
+块设备用于存储数据，必须以一定大小的块来读出或者写入数据，块设备包括CD-ROM、RAM驱动器和磁盘驱动器等。
+
+
+链接文件：链接文件是一种特殊类型的文件，它的内容只...  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/11/21/Linux%E7%BC%96%E7%A8%8B/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
 
    
 
