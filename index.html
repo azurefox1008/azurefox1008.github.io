@@ -158,6 +158,11 @@
       <h3 class="widget-title">归档</h3>
       
       
+        <a class="archive-link" href="/archives/2023/12 ">
+          十二月 2023 
+          <div class="archive-count">1 </div>
+        </a>
+      
         <a class="archive-link" href="/archives/2023/11 ">
           十一月 2023 
           <div class="archive-count">2 </div>
@@ -185,6 +190,10 @@
       <ul>
         
           <li>
+            <a href="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/">数字图像处理 复习</a>
+          </li>
+        
+          <li>
             <a href="/2023/11/21/Git%E5%88%86%E6%94%AF%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6/">Git分支的创建与合并</a>
           </li>
         
@@ -200,10 +209,6 @@
             <a href="/2023/05/28/%E6%95%B0%E6%8D%AE%E5%BA%93-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">数据库-思维导图</a>
           </li>
         
-          <li>
-            <a href="/2023/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%AC%AC1%E7%AB%A0-%E6%A6%82%E8%BF%B0/">计算机网络 第1章 概论</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -214,6 +219,91 @@
     </div>
     <div id="content-body">
       <!-- 导航页-->
+
+   
+
+<article id="post-数字图像处理-复习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/">数字图像处理 复习</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-12-19T08:40:00.000Z" itemprop="datePublished">2023-12-19</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            2.7k 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            一、计算题第一章 图像处理概述计算图片文件大小最终结果一般要化为字节，或者KB、MB：
+BMP格式图片 ★ 公式1：
+
+文件头 + 信息头 + 颜色表 + \frac{\text{分辨率} \times \text{位深}}{8}文件头：14B
+信息头：40B
+颜色表：颜色数 × 4（BMP格式通常使用4个字节来保存颜色信息，分别表示红绿蓝和保留字节）
+分辨率：行像素数 × 列像素数
+位深：256色就是8位深
+例题：
+
+
+公式2：
+BMP要求每行的字节数是4的倍数，如果遇到行不是4的倍数需要加上31补齐，使其能够向下取整到最接近的4的倍数：
+
+文件头 + 信息头 + 颜色表 + (\frac{\text{行像素数} \times \text{位深} + 31}{32}) \times \text{列像素数}\times \text{4}⚠️注意：上式中的4不能和分母中的32约掉，还有括号不能省去，否则会失去求整的效果。
+例题：
+
+
+PNG格式图片 ★ 如果题目未说明，默认为PNG或者无压缩：
+例题：
+
+彩色图像没有提 色深度 or 位深  默认为8位深，即RGB三基色，每个基色通...  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
 
    
 
@@ -603,6 +693,43 @@ Linux文件系统扩展名&emsp;&emsp;Linux文件扩展名与文件类型、可�
       <footer id="footer">
   
   <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+  
+  <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      linebreaks: { automatic:true }, 
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) 
+  },
+  tex2jax: { 
+      inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
+      processEscapes: true, 
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  TeX: {  
+      equationNumbers: { autoNumber: "AMS" },
+      noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, 
+      Macros: { href: "{}" } 
+  },
+  messageStyle: "none"
+  }); 
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
   
   <div id="footer-info" class="inner">
     
