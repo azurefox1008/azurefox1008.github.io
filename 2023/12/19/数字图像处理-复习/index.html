@@ -13,70 +13,70 @@
   
   <title>数字图像处理 复习 | (~〃&#39;▽&#39;〃)~♬♪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="一、计算题第一章 图像处理概述计算图片文件大小最终结果一般要化为字节，或者KB、MB： BMP格式图片 ★ 公式1：  文件头 + 信息头 + 颜色表 + \frac{\text{分辨率} \times \text{位深}}{8}文件头：14B 信息头：40B 颜色表：颜色数 × 4（BMP格式通常使用4个字节来保存颜色信息，分别表示红绿蓝和保留字节） 分辨率：行像素数 × 列像素数 位深：256">
+  <meta name="description" content="一、计算题第一章 图像处理概述计算图片文件大小最终结果一般要化为字节，或者KB、MB： BMP格式图片 ★ 公式1：$$文件头 + 信息头 + 颜色表 + \frac{\text{分辨率} \times \text{位深}}{8}$$文件头：14B 信息头：40B 颜色表：颜色数 × 4（BMP格式通常使用4个字节来保存颜色信息，分别表示红绿蓝和保留字节） 分辨率：行像素数 × 列像素数 位深：2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数字图像处理 复习">
 <meta property="og:url" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="(~〃&#39;▽&#39;〃)~♬♪">
-<meta property="og:description" content="一、计算题第一章 图像处理概述计算图片文件大小最终结果一般要化为字节，或者KB、MB： BMP格式图片 ★ 公式1：  文件头 + 信息头 + 颜色表 + \frac{\text{分辨率} \times \text{位深}}{8}文件头：14B 信息头：40B 颜色表：颜色数 × 4（BMP格式通常使用4个字节来保存颜色信息，分别表示红绿蓝和保留字节） 分辨率：行像素数 × 列像素数 位深：256">
+<meta property="og:description" content="一、计算题第一章 图像处理概述计算图片文件大小最终结果一般要化为字节，或者KB、MB： BMP格式图片 ★ 公式1：$$文件头 + 信息头 + 颜色表 + \frac{\text{分辨率} \times \text{位深}}{8}$$文件头：14B 信息头：40B 颜色表：颜色数 × 4（BMP格式通常使用4个字节来保存颜色信息，分别表示红绿蓝和保留字节） 分辨率：行像素数 × 列像素数 位深：2">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214900469.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214941967.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218215037675.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218215105905.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218183509546.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218231029800.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223147907.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223127868.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218212432584.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220447874.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220720623.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220934291.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218221234931.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222448984.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222611592.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222800404.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223312973.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223426945.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225214607.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225311289.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225402219.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225458686.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225957912.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225811341.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223906398.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218224143849.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218224324612.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219003401031.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219003922327.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219004841406.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219012941851.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219013021208.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219013056851.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142236143.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142445263.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142811427.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142906382.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219143127235.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219143349537.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219144914872.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219150007085.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219144123630.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219153627505.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155153691.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155224876.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155249332.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219153143003.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155402130.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155437260.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151701657.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151329783.png">
-<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151415953.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214900469.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214941967.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218215037675.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218215105905.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218183509546.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218231029800.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223147907.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223127868.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218212432584.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220447874.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220720623.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220934291.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218221234931.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222448984.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222611592.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222800404.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223312973.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223426945.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225214607.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225311289.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225402219.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225458686.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225957912.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225811341.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223906398.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218224143849.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218224324612.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219003401031.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219003922327.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219004841406.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219012941851.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219013021208.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219013056851.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142236143.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142445263.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142811427.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142906382.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219143127235.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219143349537.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219144914872.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219150007085.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219144123630.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219153627505.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155153691.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155224876.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155249332.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219153143003.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155402130.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155437260.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151701657.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151329783.png">
+<meta property="og:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151415953.png">
 <meta property="article:published_time" content="2023-12-19T08:40:00.000Z">
-<meta property="article:modified_time" content="2023-12-19T08:43:35.674Z">
+<meta property="article:modified_time" content="2023-12-19T09:02:20.938Z">
 <meta property="article:author" content="azurefox1008">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214900469.png">
+<meta name="twitter:image" content="https://azurefox1008.github.io/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214900469.png">
   
   
   
@@ -309,7 +309,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            2.7k 词 
+            2.6k 词 
           </div>
         </div>
         
@@ -317,84 +317,143 @@
       <div class="e-content article-entry" itemprop="articleBody">
         
           <h1 id="一、计算题"><a href="#一、计算题" class="headerlink" title="一、计算题"></a>一、计算题</h1><h2 id="第一章-图像处理概述"><a href="#第一章-图像处理概述" class="headerlink" title="第一章 图像处理概述"></a>第一章 图像处理概述</h2><p>计算图片文件大小最终结果一般要化为字节，或者KB、MB：</p>
-<h3 id="BMP格式图片-★"><a href="#BMP格式图片-★" class="headerlink" title="BMP格式图片 ★ "></a><font color="orangered">BMP格式图片 ★ </font></h3><p><strong><font color="teal"><big>公式1：</big></font></strong></p>
-<script type="math/tex; mode=display">
-文件头 + 信息头 + 颜色表 + \frac{\text{分辨率} \times \text{位深}}{8}</script><p><strong>文件头</strong>：14B</p>
+<h3 id="BMP格式图片-★"><a href="#BMP格式图片-★" class="headerlink" title="BMP格式图片 ★ "></a><font color="orangered">BMP格式图片 ★ </font></h3><p><strong><font color="teal"><big>公式1：</big></font></strong><br>$$<br>文件头 + 信息头 + 颜色表 + \frac{\text{分辨率} \times \text{位深}}{8}<br>$$<br><strong>文件头</strong>：14B</p>
 <p><strong>信息头</strong>：40B</p>
 <p><strong>颜色表</strong>：颜色数 × 4<small>（BMP格式通常使用4个字节来保存颜色信息，分别表示红绿蓝和保留字节）</small></p>
 <p><strong>分辨率</strong>：行像素数 × 列像素数</p>
-<p><strong>位深</strong>：256色就是8位深</p>
+<p><strong>位深</strong>：256色就是8位深 </p>
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218214900469.png" alt="image-20231218214900469" style="zoom:70%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218214941967.png" alt="image-20231218214941967" style="zoom:70%;" align="left"></p>
-<p><strong><font color="teal"><big>公式2：</big></font></strong></p>
-<p>BMP要求每<strong>行</strong>的字节数是4的倍数，如果遇到行不是4的倍数需要加上31补齐，使其能够<strong><font color="Orange">向下取整</font></strong>到最接近的4的倍数：</p>
-<script type="math/tex; mode=display">
-文件头 + 信息头 + 颜色表 + (\frac{\text{行像素数} \times \text{位深} + 31}{32}) \times \text{列像素数}\times \text{4}</script><p><strong>⚠️</strong>注意：上式中的4不能和分母中的32约掉，还有括号不能省去，否则会失去求整的效果。</p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214900469.png" alt="image-20231218214900469" style="zoom:70%;"> 
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218214941967.png" alt="image-20231218214941967" style="zoom:70%;">
+
+
+
+<p><br><strong><font color="teal"><big>公式2：</big></font></strong></p>
+<p>BMP要求每<strong>行</strong>的字节数是4的倍数，如果遇到行不是4的倍数需要加上31补齐，使其能够**<font color="Orange">向下取整</font>**到最接近的4的倍数：<br>$$<br>文件头 + 信息头 + 颜色表 + (\frac{\text{行像素数} \times \text{位深} + 31}{32}) \times \text{列像素数}\times \text{4}<br>$$<br><strong>⚠️</strong>注意：上式中的4不能和分母中的32约掉，还有括号不能省去，否则会失去求整的效果。</p>
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218215037675.png" alt="image-20231218215037675" style="zoom:60%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218215105905.png" alt="image-20231218215105905" style="zoom:60%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218215037675.png" alt="image-20231218215037675" style="zoom:60%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218215105905.png" alt="image-20231218215105905" style="zoom:60%;">
+
+
+
 <h3 id="PNG格式图片-★"><a href="#PNG格式图片-★" class="headerlink" title="PNG格式图片 ★ "></a><font color="orangered">PNG格式图片 ★ </font></h3><p>如果题目未说明，默认为PNG或者无压缩：</p>
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218183509546.png" alt="image-20231218183509546" style="zoom:30%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218183509546.png" alt="image-20231218183509546" style="zoom:30%;">
+
+
+
 <p>彩色图像没有提 <em>色深度</em> or <em>位深</em>  默认为<strong>8位深</strong>，即RGB三基色，每个基色通常用8bit来表示（256色） → 共24bit，存储每个像素的颜色信息需要3字节</p>
-<h3 id="彩色位图"><a href="#彩色位图" class="headerlink" title="彩色位图"></a>彩色位图</h3><p>PS：不需要颜色表。</p>
-<script type="math/tex; mode=display">
-文件头 + 信息头  + (\frac{\text{行像素数} \times \text{位深} + 31}{32}) \times \text{列像素数}\times \text{4}</script><h2 id="第二章-图像处理基础知识"><a href="#第二章-图像处理基础知识" class="headerlink" title="第二章 图像处理基础知识"></a>第二章 图像处理基础知识</h2><h3 id="灰度值的均值、方差和标准差（用灰度值替换x）"><a href="#灰度值的均值、方差和标准差（用灰度值替换x）" class="headerlink" title="灰度值的均值、方差和标准差（用灰度值替换x）"></a>灰度值的均值、方差和标准差<small>（用灰度值替换x）</small></h3><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218231029800.png" alt="image-20231218231029800" style="zoom:70%;" align="left"></p>
+<h3 id="彩色位图"><a href="#彩色位图" class="headerlink" title="彩色位图"></a>彩色位图</h3><p>PS：不需要颜色表。<br>$$<br>文件头 + 信息头  + (\frac{\text{行像素数} \times \text{位深} + 31}{32}) \times \text{列像素数}\times \text{4}<br>$$</p>
+<h2 id="第二章-图像处理基础知识"><a href="#第二章-图像处理基础知识" class="headerlink" title="第二章 图像处理基础知识"></a>第二章 图像处理基础知识</h2><h3 id="灰度值的均值、方差和标准差（用灰度值替换x）"><a href="#灰度值的均值、方差和标准差（用灰度值替换x）" class="headerlink" title="灰度值的均值、方差和标准差（用灰度值替换x）"></a>灰度值的均值、方差和标准差<small>（用灰度值替换x）</small></h3><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218231029800.png" alt="image-20231218231029800" style="zoom:70%;">
+
+
+
 <h3 id="RGB模型-↔-HSL模型"><a href="#RGB模型-↔-HSL模型" class="headerlink" title="RGB模型 ↔ HSL模型"></a>RGB模型 ↔ HSL模型</h3><p>(教材P30，老师说用不到计算器，感觉考得概率很小？)</p>
 <h3 id="直方图-★"><a href="#直方图-★" class="headerlink" title="直方图 ★ "></a><font color="orangered">直方图 ★ </font></h3><p><strong>一般灰度直方图：</strong></p>
 <p>横坐标：灰度值</p>
 <p>纵坐标：具有该灰度级的像素个数</p>
 <p><strong>归一化直方图：</strong></p>
 <p>横坐标：灰度值</p>
-<p>纵坐标：具有该灰度级的像素出现的频数<small>（像素个数 / 像素总数）</small></p>
+<p>纵坐标：具有该灰度级的像素出现的频数<small>（像素个数 &#x2F; 像素总数）</small></p>
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218223147907.png" alt="image-20231218223147907" style="zoom:70%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218223127868.png" alt="image-20231218223127868" style="zoom:67%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223147907.png" alt="image-20231218223147907" style="zoom:70%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223127868.png" alt="image-20231218223127868" style="zoom:67%;">
+
+
+
 <p><strong><big>像素间的关系：</big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218212432584.png" alt="image-20231218212432584" style="zoom:50%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218212432584.png" alt="image-20231218212432584" style="zoom:50%;">
+
+
+
 <p>如果两个像素点<strong>邻接</strong>，需要满足：</p>
 <ul>
 <li>互为领域</li>
 <li>灰度值相似</li>
 </ul>
-<p>设置一个相似灰度值集合V，例如V = {16, 17, …, 32}，如果p，q的灰度值都在V中，且<script type="math/tex">q∈N_4(p)</script>，则p、q为4-邻接。</p>
+<p>设置一个相似灰度值集合V，例如V &#x3D; {16, 17, …, 32}，如果p，q的灰度值都在V中，且$$q∈N_4(p)$$，则p、q为4-邻接。</p>
 <p><strong>m-邻接</strong>：如果像素点的灰度值满足相似性准则，又满足下列条件之一：</p>
 <ul>
-<li><script type="math/tex; mode=display">q∈N_4(p)</script></li>
-<li><p><script type="math/tex">q∈N_D(p)</script> 且 <script type="math/tex">N_4(p) ∩ N_4(p) =</script>∅</p>
+<li><p>$$q∈N_4(p)$$</p>
+</li>
+<li><p>$$q∈N_D(p)$$ 且 $$N_4(p) ∩ N_4(p) &#x3D; $$∅</p>
 </li>
 </ul>
-<h3 id="距离通量-★"><a href="#距离通量-★" class="headerlink" title="距离通量 ★ "></a><font color="orangered">距离通量 ★ </font></h3><h4 id="1-欧式距离D-e"><a href="#1-欧式距离D-e" class="headerlink" title="1. 欧式距离D_e"></a>1. 欧式距离<script type="math/tex">D_e</script></h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218220447874.png" alt="image-20231218220447874" style="zoom:28%;" align="left"></p>
-<h4 id="2-城市街道距离D-4"><a href="#2-城市街道距离D-4" class="headerlink" title="2. 城市街道距离D_4"></a>2. 城市街道距离<script type="math/tex">D_4</script></h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218220720623.png" alt="image-20231218220720623" style="zoom:28%;" align="left"></p>
-<p><strong>⚠️</strong><script type="math/tex">D_4(p, q) = 1</script> 时，q是p的4领域。</p>
-<h4 id="3-棋盘距离D-8"><a href="#3-棋盘距离D-8" class="headerlink" title="3. 棋盘距离D_8"></a>3. 棋盘距离<script type="math/tex">D_8</script></h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218220934291.png" alt="image-20231218220934291" style="zoom:28%;" align="left"></p>
-<p><strong>⚠️</strong><script type="math/tex">D_e</script>、<script type="math/tex">D_4</script>、<script type="math/tex">D_8</script> 距离仅与像素点的坐标有关，与图像内容没有关系。</p>
-<h4 id="4-D-m距离："><a href="#4-D-m距离：" class="headerlink" title="4. D_m距离："></a>4. <script type="math/tex">D_m</script>距离：</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218221234931.png" alt="image-20231218221234931" style="zoom:28%;" align="left"></p>
+<h3 id="距离通量-★"><a href="#距离通量-★" class="headerlink" title="距离通量 ★ "></a><font color="orangered">距离通量 ★ </font></h3><h4 id="1-欧式距离-D-e"><a href="#1-欧式距离-D-e" class="headerlink" title="1. 欧式距离$$D_e$$"></a>1. 欧式距离$$D_e$$</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220447874.png" alt="image-20231218220447874" style="zoom:28%;">
+
+
+
+<h4 id="2-城市街道距离-D-4"><a href="#2-城市街道距离-D-4" class="headerlink" title="2. 城市街道距离$$D_4$$"></a>2. 城市街道距离$$D_4$$</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220720623.png" alt="image-20231218220720623" style="zoom:28%;">
+
+<p><strong>⚠️</strong>$$D_4(p, q) &#x3D; 1$$ 时，q是p的4领域。</p>
+<h4 id="3-棋盘距离-D-8"><a href="#3-棋盘距离-D-8" class="headerlink" title="3. 棋盘距离$$D_8$$"></a>3. 棋盘距离$$D_8$$</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218220934291.png" alt="image-20231218220934291" style="zoom:28%;">
+
+
+
+<p><strong>⚠️</strong>$$D_e$$、$$D_4$$、$$D_8$$ 距离仅与像素点的坐标有关，与图像内容没有关系。</p>
+<h4 id="4-D-m-距离："><a href="#4-D-m-距离：" class="headerlink" title="4. $$D_m$$距离："></a>4. $$D_m$$距离：</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218221234931.png" alt="image-20231218221234931" style="zoom:28%;">
+
+
+
 <p><strong><big><font color="orange">例题1：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218222448984.png" alt="image-20231218222448984" style="zoom:70%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218222611592.png" alt="image-20231218222611592" style="zoom:75%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222448984.png" alt="image-20231218222448984" style="zoom:70%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222611592.png" alt="image-20231218222611592" style="zoom:75%;">
+
 <p><strong>⚠️</strong>坐标约定：</p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218222800404.png" alt="image-20231218222800404" style="zoom: 33%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218222800404.png" alt="image-20231218222800404" style="zoom: 33%;">
+
 <p><strong><big><font color="orange">例题2：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218223312973.png" alt="image-20231218223312973" style="zoom:70%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218223426945.png" alt="image-20231218223426945" style="zoom:75%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223312973.png" alt="image-20231218223312973" style="zoom:70%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223426945.png" alt="image-20231218223426945" style="zoom:75%;">
+
+
+
 <h3 id="图像质量评价-★"><a href="#图像质量评价-★" class="headerlink" title="图像质量评价 ★ "></a><font color="orangered">图像质量评价 ★ </font></h3><p><small>（过于复杂的题目应该会给公式？）</small></p>
-<h4 id="1-MSE均方误差"><a href="#1-MSE均方误差" class="headerlink" title="1. MSE均方误差"></a>1. MSE均方误差</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218225214607.png" alt="image-20231218225214607" style="zoom:40%;" align="left"></p>
-<h4 id="2-SNR信噪比"><a href="#2-SNR信噪比" class="headerlink" title="2. SNR信噪比"></a>2. SNR信噪比</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218225311289.png" alt="image-20231218225311289" style="zoom:40%;" align="left"></p>
-<h4 id="3-PSNR峰值信噪比"><a href="#3-PSNR峰值信噪比" class="headerlink" title="3. PSNR峰值信噪比"></a>3. PSNR峰值信噪比</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218225402219.png" alt="image-20231218225402219" style="zoom:40%;" align="left"></p>
-<h4 id="4-MAE平均绝对误差"><a href="#4-MAE平均绝对误差" class="headerlink" title="4. MAE平均绝对误差"></a>4. MAE平均绝对误差</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218225458686.png" alt="image-20231218225458686" style="zoom:32%;" align="left"></p>
-<h4 id="5-SSIM结构相似性"><a href="#5-SSIM结构相似性" class="headerlink" title="5. SSIM结构相似性"></a>5. SSIM结构相似性</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218225957912.png" alt="image-20231218225957912" style="zoom:35%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218225811341.png" alt="image-20231218225811341" style="zoom:35%;" align="left"></p>
+<h4 id="1-MSE均方误差"><a href="#1-MSE均方误差" class="headerlink" title="1. MSE均方误差"></a>1. MSE均方误差</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225214607.png" alt="image-20231218225214607" style="zoom:40%;">
+
+
+
+<h4 id="2-SNR信噪比"><a href="#2-SNR信噪比" class="headerlink" title="2. SNR信噪比"></a>2. SNR信噪比</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225311289.png" alt="image-20231218225311289" style="zoom:40%;">
+
+
+
+<h4 id="3-PSNR峰值信噪比"><a href="#3-PSNR峰值信噪比" class="headerlink" title="3. PSNR峰值信噪比"></a>3. PSNR峰值信噪比</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225402219.png" alt="image-20231218225402219" style="zoom:40%;">
+
+
+
+<h4 id="4-MAE平均绝对误差"><a href="#4-MAE平均绝对误差" class="headerlink" title="4. MAE平均绝对误差"></a>4. MAE平均绝对误差</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225458686.png" alt="image-20231218225458686" style="zoom:32%;">
+
+
+
+<h4 id="5-SSIM结构相似性"><a href="#5-SSIM结构相似性" class="headerlink" title="5. SSIM结构相似性"></a>5. SSIM结构相似性</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225957912.png" alt="image-20231218225957912" style="zoom:35%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218225811341.png" alt="image-20231218225811341" style="zoom:35%;">
+
+
+
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218223906398.png" alt="image-20231218223906398" style="zoom:60%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218224143849.png" alt="image-20231218224143849" style="zoom:120%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231218224324612.png" alt="image-20231218224324612" style="zoom:120%;" align="left"></p>
-<h2 id="第三章-空域图像增强"><a href="#第三章-空域图像增强" class="headerlink" title="第三章 空域图像增强"></a>第三章 空域图像增强</h2><h3 id="线性灰度变换-★"><a href="#线性灰度变换-★" class="headerlink" title="线性灰度变换 ★"></a><font color="orangered">线性灰度变换 ★</font></h3><h4 id="全局线性变换★"><a href="#全局线性变换★" class="headerlink" title="全局线性变换★"></a>全局线性变换★</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219003401031.png" alt="image-20231219003401031" style="zoom:67%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218223906398.png" alt="image-20231218223906398" style="zoom:60%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218224143849.png" alt="image-20231218224143849" style="zoom:120%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231218224324612.png" alt="image-20231218224324612" style="zoom:120%;">
+
+
+
+
+
+<h2 id="第三章-空域图像增强"><a href="#第三章-空域图像增强" class="headerlink" title="第三章 空域图像增强"></a>第三章 空域图像增强</h2><h3 id="线性灰度变换-★"><a href="#线性灰度变换-★" class="headerlink" title="线性灰度变换 ★"></a><font color="orangered">线性灰度变换 ★</font></h3><h4 id="全局线性变换★"><a href="#全局线性变换★" class="headerlink" title="全局线性变换★"></a>全局线性变换★</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219003401031.png" alt="image-20231219003401031" style="zoom:67%;">
+
 <p>横轴：原图像的输入灰度值，范围为[a, b]</p>
 <p>纵轴：变换后图像的输出灰度值，范围为[c, d]</p>
 <p>将原图像的灰度值范围[a, b]变换到[c, d]，<strong>输入图像灰度值 r</strong> 与<strong>输出图像灰度值 s</strong> 之间的关系式为：</p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219003922327.png" alt="image-20231219003922327" style="zoom:45%;"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219003922327.png" alt="image-20231219003922327" style="zoom:45%;">
+
 <ul>
 <li><p>斜率等于1，经过全局变换后，灰度值动态范围不会有变化；</p>
 </li>
@@ -404,87 +463,96 @@
 </li>
 </ul>
 <h4 id="分段线性变换"><a href="#分段线性变换" class="headerlink" title="分段线性变换"></a>分段线性变换</h4><p>（原理同全局线性变换，课本P48）</p>
-<h4 id="图像反转"><a href="#图像反转" class="headerlink" title="图像反转"></a>图像反转</h4><script type="math/tex; mode=display">s = (L-1) -r$$  或者 $$s = 1.0-r$$      <small>（归一化灰度值）</small>
-
-$$L$$为图像的灰度级。
-
-
-
-#### 灰度图像阈值化
-
-<img src=".\数字图像处理-复习\image-20231219004841406.png" alt="image-20231219004841406" style="zoom:30%;" align="left"/>
+<h4 id="图像反转"><a href="#图像反转" class="headerlink" title="图像反转"></a>图像反转</h4><p>$$s&#x3D;(L-1)-r$$ </p>
+<p>其中，$$L$$为图像灰度级。</p>
+<p>$$s&#x3D;1.0-r$$</p>
+<h4 id="灰度图像阈值化"><a href="#灰度图像阈值化" class="headerlink" title="灰度图像阈值化"></a>灰度图像阈值化</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219004841406.png" alt="image-20231219004841406" style="zoom:30%;">
 
 
 
-### <font color = orangered>基于直方图的灰度变换 ★ </font>
+<h3 id="基于直方图的灰度变换-★"><a href="#基于直方图的灰度变换-★" class="headerlink" title="基于直方图的灰度变换 ★ "></a><font color="orangered">基于直方图的灰度变换 ★ </font></h3><h4 id="直方图均衡化（必考）★"><a href="#直方图均衡化（必考）★" class="headerlink" title="直方图均衡化（必考）★ "></a><font color="orangered">直方图均衡化（必考）★ </font></h4><p>灰度变换函数必须满足：</p>
+<ul>
+<li>$$T(r)$$ 在 $$0≤r≤1$$ 区间内是单值函数<small>（对定义域每一个自变量x，其对应的函数值f（x）是唯一的）</small>，且单调递增<small>（保证原始灰度级的次序）</small></li>
+<li>$$T(r)$$ 在 $$0≤r≤1$$ 区间内满足 $$0≤T(r)≤1$$ <small>（保证映射后的像素灰度级仍在允许灰度级范围内，避免整个图像明显变亮或变暗）</small></li>
+</ul>
+<p><strong><big><font color="orange">例题：</font></big></strong></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219012941851.png" alt="image-20231219012941851" style="zoom:19%;">
 
-#### <font color = orangered>直方图均衡化（必考）★ </font>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219013021208.png" alt="image-20231219013021208" style="zoom:18%;">
 
-灰度变换函数必须满足：
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219013056851.png" alt="image-20231219013056851" style="zoom:20%;">
 
-+ $$T(r)$$ 在 $$0≤r≤1$$ 区间内是单值函数<small>（对定义域每一个自变量x，其对应的函数值f（x）是唯一的）</small>，且单调递增<small>（保证原始灰度级的次序）</small>
-+ $$T(r)$$ 在 $$0≤r≤1$$ 区间内满足 $$0≤T(r)≤1$$ <small>（保证映射后的像素灰度级仍在允许灰度级范围内，避免整个图像明显变亮或变暗）</small>
+<p><strong>量化</strong>，即找与 $$s_k$$ 最接近的量化灰度级 $$r_k$$ ，比如上表中 $$s_k &#x3D; 0.44$$ 最接近它的灰度级是 $$r_k &#x3D; 0.43$$ ，因此映射为 $$1&#x2F;7→3&#x2F;7$$</p>
+<h4 id="直方图规定化"><a href="#直方图规定化" class="headerlink" title="直方图规定化"></a>直方图规定化</h4><p>（课本P58，张老师原话“比较麻烦”，可能不会考）</p>
+<h3 id="空域滤波与邻域运算-★"><a href="#空域滤波与邻域运算-★" class="headerlink" title="空域滤波与邻域运算 ★ "></a><font color="orangered">空域滤波与邻域运算 ★ </font></h3><h4 id="领域运算（滤波操作）"><a href="#领域运算（滤波操作）" class="headerlink" title="领域运算（滤波操作）"></a>领域运算（滤波操作）</h4><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142236143.png" alt="image-20231219142236143" style="zoom:50%;">
 
-**<big><font color=orange>例题：</font></big>**
-
-<img src=".\数字图像处理-复习\image-20231219012941851.png" alt="image-20231219012941851" style="zoom:19%;" align="left"/>
-
-<img src=".\数字图像处理-复习\image-20231219013021208.png" alt="image-20231219013021208" style="zoom:18%;" align="left"/>
-
-<img src=".\数字图像处理-复习\image-20231219013056851.png" alt="image-20231219013056851" style="zoom:20%;" align="left"/>
-
-**量化**，即找与 $$s_k$$ 最接近的量化灰度级 $$r_k$$ ，比如上表中 $$s_k = 0.44$$ 最接近它的灰度级是 $$r_k = 0.43$$ ，因此映射为 $$1/7→3/7</script><h4 id="直方图规定化"><a href="#直方图规定化" class="headerlink" title="直方图规定化"></a>直方图规定化</h4><p>（课本P58，张老师原话“比较麻烦”，可能不会考）</p>
-<h3 id="空域滤波与邻域运算-★"><a href="#空域滤波与邻域运算-★" class="headerlink" title="空域滤波与邻域运算 ★ "></a><font color="orangered">空域滤波与邻域运算 ★ </font></h3><h4 id="领域运算（滤波操作）"><a href="#领域运算（滤波操作）" class="headerlink" title="领域运算（滤波操作）"></a>领域运算（滤波操作）</h4><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219142236143.png" alt="image-20231219142236143" style="zoom:50%;" align="left"></p>
 <p><strong>⚠️</strong>滤波操作是<font color="teal"><strong>相关运算</strong></font>。</p>
 <h4 id="空域平滑滤波-★"><a href="#空域平滑滤波-★" class="headerlink" title="空域平滑滤波 ★"></a>空域平滑滤波 ★</h4><p><strong>均值滤波</strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219142445263.png" alt="image-20231219142445263" style="zoom:40%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142445263.png" alt="image-20231219142445263" style="zoom:40%;">
+
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219142811427.png" alt="image-20231219142811427" style="zoom:67%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219142906382.png" alt="image-20231219142906382" style="zoom:67%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142811427.png" alt="image-20231219142811427" style="zoom:67%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219142906382.png" alt="image-20231219142906382" style="zoom:67%;">
+
+
+
 <h4 id="边界处理★"><a href="#边界处理★" class="headerlink" title="边界处理★"></a>边界处理★</h4><ul>
-<li><strong>常量法</strong>（通常是补0）方式扩展边界：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219143127235.png" alt="image-20231219143127235" style="zoom:33%;"></li>
-</ul>
-<ul>
-<li><strong>反射法</strong>（reflect）方式扩展边界（以边界为轴镜像扩展）：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219143349537.png" alt="image-20231219143349537" style="zoom:40%;"></li>
-</ul>
-<ul>
-<li><strong>复制法</strong>（replicate）方式扩展边界（对边界进行复制）：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219144914872.png" alt="image-20231219144914872" style="zoom:80%;"></li>
-</ul>
-<ul>
-<li><strong>外包装法</strong>（wrap）：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219150007085.png" alt="image-20231219150007085" style="zoom:80%;"></li>
+<li><p><strong>常量法</strong>（通常是补0）方式扩展边界：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219143127235.png" alt="image-20231219143127235" style="zoom:33%;"></p>
+</li>
+<li><p><strong>反射法</strong>（reflect）方式扩展边界（以边界为轴镜像扩展）：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219143349537.png" alt="image-20231219143349537" style="zoom:40%;"></p>
+</li>
+<li><p><strong>复制法</strong>（replicate）方式扩展边界（对边界进行复制）：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219144914872.png" alt="image-20231219144914872" style="zoom:80%;"></p>
+</li>
+<li><p><strong>外包装法</strong>（wrap）：<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219150007085.png" alt="image-20231219150007085" style="zoom:80%;"></p>
+</li>
 </ul>
 <p><strong>高斯滤波：</strong>（课本P63，应该不会考？）</p>
 <p><strong>阈值邻域平滑滤波：</strong></p>
-<p>设定一个阈值<script type="math/tex">T</script>，先用均值滤波求出灰度值<script type="math/tex">f'(x, y)</script>，与原来的灰度值<script type="math/tex">f(x,y)</script>相减：</p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219144123630.png" alt="image-20231219144123630" style="zoom:30%;" align="left"></p>
+<p>设定一个阈值$$T$$，先用均值滤波求出灰度值$$f’(x, y)$$，与原来的灰度值$$f(x,y)$$相减：</p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219144123630.png" alt="image-20231219144123630" style="zoom:30%;">
+
+
+
 <p><strong>中值滤波：</strong></p>
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219153627505.png" alt="image-20231219153627505" style="zoom:55%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219153627505.png" alt="image-20231219153627505" style="zoom:55%;">
+
+
+
 <h4 id="空域锐化滤波-★"><a href="#空域锐化滤波-★" class="headerlink" title="空域锐化滤波 ★"></a>空域锐化滤波 ★</h4><h5 id="一阶微分算子-★"><a href="#一阶微分算子-★" class="headerlink" title="一阶微分算子 ★"></a>一阶微分算子 ★</h5><p><strong>Roberts算子：</strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219155153691.png" alt="image-20231219155153691" style="zoom:50%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155153691.png" alt="image-20231219155153691" style="zoom:50%;">
+
 <p><strong>Prewitt算子：</strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219155224876.png" alt="image-20231219155224876" style="zoom:50%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155224876.png" alt="image-20231219155224876" style="zoom:50%;">
+
 <p><strong>Sobel算子：</strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219155249332.png" alt="image-20231219155249332" style="zoom:50%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219153143003.png" alt="image-20231219153143003" style="zoom:60%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155249332.png" alt="image-20231219155249332" style="zoom:50%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219153143003.png" alt="image-20231219153143003" style="zoom:60%;">
+
+
+
 <p><strong><big><font color="orange">例题：</font></big></strong></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219155402130.png" alt="image-20231219155402130" style="zoom:67%;" align="left"></p>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219155437260.png" alt="image-20231219155437260" style="zoom:67%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155402130.png" alt="image-20231219155402130" style="zoom:67%;">
+
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219155437260.png" alt="image-20231219155437260" style="zoom:67%;">
+
 <p><strong>二阶微分算子</strong></p>
 <p>(课本P73，主要是拉普拉斯算子，应该不会考？课后习题、学习通作业都没有出过)</p>
-<h3 id="相关运算与卷积运算-★"><a href="#相关运算与卷积运算-★" class="headerlink" title="相关运算与卷积运算 ★"></a>相关运算与卷积运算 ★</h3><p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219151701657.png" alt="image-20231219151701657" style="zoom:30%;" align="left"></p>
+<h3 id="相关运算与卷积运算-★"><a href="#相关运算与卷积运算-★" class="headerlink" title="相关运算与卷积运算 ★"></a>相关运算与卷积运算 ★</h3><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151701657.png" alt="image-20231219151701657" style="zoom:30%;">
+
 <ul>
 <li><strong>相关运算</strong>见前“领域运算”</li>
 </ul>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219151329783.png" alt="image-20231219151329783" style="zoom:40%;" align="left"></p>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151329783.png" alt="image-20231219151329783" style="zoom:40%;">
+
 <ul>
 <li><strong>卷积运算</strong>：先把滤波核进行180°旋转后再进行点乘</li>
 </ul>
-<p><img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/数字图像处理-复习\image-20231219151415953.png" alt="image-20231219151415953" style="zoom:40%;" align="left"></p>
-<big>**⚠️**注意：<u>如果题目没有明确提出“卷积”这两个字，只是说“对图像进行xxxx滤波”，直接用**相关运算**来做</u>。</big>
+<img src="/2023/12/19/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E5%A4%8D%E4%B9%A0/image-20231219151415953.png" alt="image-20231219151415953" style="zoom:40%;">
 
-
-
+<p><big><strong>⚠️</strong>注意：<u>如果题目没有明确提出“卷积”这两个字，只是说“对图像进行xxxx滤波”，直接用<strong>相关运算</strong>来做</u>。</big></p>
 <h2 id="第六章-图像的几何变换"><a href="#第六章-图像的几何变换" class="headerlink" title="第六章 图像的几何变换"></a>第六章 图像的几何变换</h2><p>改变空间坐标。</p>
 <h2 id="第九章-图像描述与特征提取"><a href="#第九章-图像描述与特征提取" class="headerlink" title="第九章 图像描述与特征提取"></a>第九章 图像描述与特征提取</h2>
         
